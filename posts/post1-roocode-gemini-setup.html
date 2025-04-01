@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building My First Project with a Local AI Agent: Roocode + Gemini Setup & SEO Calculator Tutorial</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AI Learning Blog</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Experimentation</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Building My First Project with a Local AI Agent</h1>
+            <p>Roocode + Gemini Setup & SEO Calculator Tutorial</p>
+        </div>
+    </header>
+
+    <main>
+        <article class="post-content">
+            <p class="post-meta">Published on April 1, 2025</p>
+            <p class="post-series">Series: Building with AI</p>
+
+            <section>
+                <h2>1. Introduction</h2>
+                <p>The buzz around AI agents is undeniable. While cloud-based tools are powerful, there's a unique advantage to experimenting locally – greater control, enhanced privacy, and a fantastic learning opportunity. This post marks the beginning of my journey into this space.</p>
+                <p>My goal here is twofold: first, to guide you through setting up a local AI development environment using Roocode integrated with Google's Gemini model in VS Code. Second, to demonstrate how I used this setup to build a practical web tool from scratch – a simple SEO Cost Calculator.</p>
+                <p>Inspired by discussions around practical AI applications, like those seen in <a href="https://www.youtube.com/watch?v=MmgapN3VE30" target="_blank" rel="noopener noreferrer">Julian Goldie's SEO video</a>, I wanted to see if I could leverage a local AI agent for a tangible development task.</p>
+                <p>By the end of this post, you'll have a clear, step-by-step guide to replicating this setup and a real-world example of its capabilities.</p>
+            </section>
+
+            <section>
+                <h2>2. Part 1: Setting Up Your Local AI Coding Assistant</h2>
+                <p>Let's get our tools ready. We'll be using Roocode and Google Gemini.</p>
+                <h3>Introducing the Tools</h3>
+                <ul>
+                    <li><strong>Roocode:</strong> Think of Roocode as an AI coding assistant that lives right inside your VS Code editor. It allows you to interact with powerful AI models like Gemini directly from your local environment.</li>
+                    <li><strong>Google Gemini:</strong> This is Google's family of advanced AI models. We'll be using one of its versions (like Gemini Pro) which you can access via an API key, often with a generous free tier to get started through Google AI Studio.</li>
+                </ul>
+
+                <h3>Prerequisites</h3>
+                <ul>
+                    <li>Visual Studio Code installed.</li>
+                    <li>A Google Account (likely needed to generate a Gemini API key).</li>
+                    <li>Basic familiarity with using VS Code.</li>
+                </ul>
+
+                <h3>Step-by-Step Setup</h3>
+                <ol>
+                    <li><strong>Install Roocode Extension:</strong> Open VS Code, go to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X), search for "Roocode", and install it.</li>
+                    <li><strong>Get Your Gemini API Key:</strong>
+                        <ul>
+                            <li>Head over to <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">Google AI Studio</a>.</li>
+                            <li>Follow their instructions to create a new API key specifically for Gemini. (Make sure to copy and save this key securely!)</li>
+                            <li><em>[Optional: Add a screenshot of the relevant Google AI Studio page here]</em></li>
+                        </ul>
+                    </li>
+                    <li><strong>Configure Roocode:</strong>
+                        <ul>
+                            <li>In VS Code, open your Settings (Ctrl+, or Cmd+,).</li>
+                            <li>Search for "Roocode".</li>
+                            <li>Find the setting for the API key and paste your Gemini API key there.</li>
+                            <li>Select the specific Gemini model you want to use (e.g., `gemini-pro`).</li>
+                            <li><em>[Optional: Add a screenshot of the Roocode settings in VS Code here]</em></li>
+                        </ul>
+                    </li>
+                    <li><strong>Verify the Connection:</strong> Open a new file or use the Roocode chat interface and give it a simple prompt like "Write a python function to add two numbers". If it responds correctly, you're connected!</li>
+                </ol>
+
+                <h3>Troubleshooting Tips (Optional)</h3>
+                <p><em>[Add any specific issues you encountered here, e.g., API key errors, model selection issues, and how you resolved them.]</em></p>
+            </section>
+
+            <section>
+                <h2>3. Part 2: Putting the AI Agent to Work: Building the SEO Cost Calculator</h2>
+                <p>With our local AI assistant ready, let's give it a task: build a simple web-based SEO cost calculator.</p>
+                <h3>The Challenge</h3>
+                <p>The goal was to create a basic HTML page with CSS styling and JavaScript functionality. Users should be able to input factors like the number of keywords, pages to optimize, backlinks needed, and content pieces per month, and the tool should estimate a total monthly cost.</p>
+
+                <h3>The Process with Roocode</h3>
+                <p>I interacted with Roocode step-by-step, guiding it through the creation process:</p>
+                <ol>
+                    <li><strong>Initial Prompt & Project Setup:</strong> I started with a high-level request like: <code>"Create a simple SEO cost calculator using HTML, CSS, and JavaScript. Start by creating a project directory named 'seo-cost-calculator'."</code> Roocode executed the command: <pre><code>mkdir seo-cost-calculator</code></pre></li>
+                    <li><strong>HTML Structure (`index.html`):</strong> My next instruction was: <code>"Create the index.html file inside this directory. It should include input fields for number of keywords, pages to optimize, backlinks per month, and content articles per month. Also include a button to calculate the cost and a place to display the result."</code> Roocode generated the basic HTML structure. <em>[Optional: Include a key snippet of the generated HTML here]</em></li>
+                    <li><strong>CSS Styling (`style.css`):</strong> I then asked: <code>"Create a style.css file and link it in the HTML. Add some basic styling to make the calculator look clean and centered on the page."</code> Roocode generated the CSS rules. <em>[Optional: Include a key snippet of the generated CSS here]</em></li>
+                    <li><strong>JavaScript Logic (`script.js`):</strong> Finally, I requested: <code>"Create a script.js file and link it. Implement the calculation logic. Define base costs for keywords, pages, backlinks, and content. Read the input values, calculate the total cost, and display it when the button is clicked or an input changes."</code> Roocode generated the JavaScript code. <em>[Optional: Include a key snippet of the generated JavaScript here]</em></li>
+                </ol>
+                <p>Throughout this process, I reviewed the code Roocode generated at each step, sometimes providing minor clarifications or asking for adjustments. It felt like a collaborative coding session.</p>
+
+                <h3>The Outcome</h3>
+                <p>The result was a functional, albeit simple, SEO cost calculator! It takes the user's inputs and provides an estimated monthly cost based on the predefined rates in the JavaScript.</p>
+                <p><em>[Recommendation: Embed a screenshot or GIF of the final calculator here.]</em></p>
+                <p><em>[Recommendation: If you host the code: You can find the complete code for this project on [Link to your GitHub repo/Gist here].]</em></p>
+            </section>
+
+            <section>
+                <h2>4. Conclusion & Next Steps</h2>
+                <p>Setting up a local AI coding assistant like Roocode with Gemini was surprisingly straightforward. Within a short time, I went from installation to building a functional web application.</p>
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Local AI agents offer a powerful way to experiment and build quickly.</li>
+                    <li>The iterative process of prompting, reviewing, and refining works well for development tasks.</li>
+                    <li>There's huge potential here for streamlining workflows and learning new technologies.</li>
+                </ul>
+                <h3>What's Next?</h3>
+                <p>This is just the first step in the "Building with AI" series! I plan to explore more complex tasks, different AI models, and perhaps delve into fine-tuning or integrating other tools. Stay tuned for future posts!</p>
+                <p>What are your experiences with local AI agents? Have you tried Roocode or similar tools? Share your thoughts in the comments below!</p>
+            </section>
+
+            <section>
+                <h2>5. References</h2>
+                <ul>
+                    <li><a href="[Link to Roocode Website/Docs]" target="_blank" rel="noopener noreferrer">Roocode Official Website/Documentation</a></li>
+                    <li><a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">Google AI Studio (for Gemini API Keys)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=MmgapN3VE30" target="_blank" rel="noopener noreferrer">Inspiration: Julian Goldie SEO YouTube Video</a></li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name/AI Learning Blog. All rights reserved. Remember to replace placeholders!</p>
+    </footer>
+</body>
+</html>
